@@ -1,8 +1,8 @@
 How to run?
 ===
 
-1. Install dependencies `yarn install`
+- Install dependencies `yarn install` or `npm install`
 
-1. Run `node index`
+- Run `npm start'
 
-1. Open the url [http://localhost:3000](http://localhost:3000)
+- Open the url [http://localhost:3000](http://localhost:3000)

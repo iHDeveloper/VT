@@ -1,0 +1,56 @@
+- Hello! I'm Virtual Triage :)
+
+- message: What's your name?
+  name: name
+  type: String
+  replyMessage: Thanks for the answer, {name}!
+  validators:
+    - min: 4
+    - minWords: 1
+
+- message: What city do you live in?
+  name: city
+  multiline: false
+  type: String
+
+- message: I'll skip this message
+  skip: true
+
+- message: Thanks, wait a moment.
+
+- sleep: 4000
+
+- message: Make your choice
+  name: choice
+  type: SingleChoice
+  options:
+    - label: Button 1
+      value: 1
+    - label: Button 2
+      value: 2
+
+- message: Okay! You chose the button {choice}.
+
+- message: Which colors do you like?
+  name: colors
+  type: MultipleChoice
+  maxOptions: 4
+  options:
+    - Blue
+    - Red
+    - Black
+    - label: Green
+    - value: Purple
+    - Yellow
+    - Gray
+  replyMessage: Cool colors!
+
+- message: What you want to do?
+  type: SingleChoice
+  options:
+    - label: Restart
+      next: name
+    - label: Quit
+
+- message: "Bye! :("
+  exit: true

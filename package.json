@@ -1,0 +1,18 @@
+{
+    "name": "vt-chatbot",
+    "version": "1.0.0",
+    "description": "It's a chatbot to decide to go to hospital or not",
+    "main": "index.js",
+    "author": "iHDeveloper",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4",
+        "js-yaml": "^3.9.1",
+        "socket.io": "^2.0.3",
+        "yve-bot": "^1.20.0"
+    },
+    "scripts": {
+        "start": "node index"
+    }
+}
